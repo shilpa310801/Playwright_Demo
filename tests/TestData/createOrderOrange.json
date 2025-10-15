@@ -1,0 +1,34 @@
+{
+  "valid": [
+    {
+      "firstName": "Asha",
+      "middleName": "K",
+      "lastName": "Sharma",
+      "employeeId": "",
+      "photofile": ""
+    },
+    {
+      "firstName": "Ravi",
+      "middleName": "",
+      "lastName": "Kumar",
+      "employeeId": "",
+      "photofile": ""
+    }
+  ],
+  "invalid": [
+    {
+      "firstName": "",
+      "middleName": "",
+      "lastName": "",
+      "employeeId": "",
+      "photofile": ""
+    },
+    {
+      "firstName": "A",
+      "middleName": "",
+      "lastName": "",
+      "employeeId": "##@@",
+      "photofile": ""
+    }
+  ]
+}

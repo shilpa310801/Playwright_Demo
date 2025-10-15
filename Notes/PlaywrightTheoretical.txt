@@ -1,0 +1,284 @@
+DAy 1
+Day 1 07-10-2025
+
+Credents:user4u#28	192.168.12.168	Shilpa
+https://skylabs.vinsys.com
+https://notepad.pw/lti
+
+Testing approach:--
+Manual Automation AI/Generative AI
+
+SDET:--
+UI ,API-Postman/Rest assured-JAVA , Mobile app-Appium, Performance-J-meter, BDD framework -Cucumbr,CI/CD -->SCM , AZURE Devops, JENKINS
+
+Levels of testing:--
+Unit
+Integration
+System
+UAT
+ 
+Selenium and Playwright:---
+both are cross platform
+both support 5 lang
+Playwright- All types of browsers including mobile but cannot support native mobile app automation\
+Selenium code has to be written to automate mob apps whereas playwright - inbuilt prop to test mob web browsers
+Playwright provides tracing , Web first assertions compared to Selenium
+
+npm install typescript --save-dev
+npx tsc
+npx tsc --init
+npx playwright show-report
+npx playwright test --ui
+npx playwright test
+Runs the end-to-end tests.
+npx playwright test --ui
+Starts the interactive UI mode.
+npx playwright test --project=chromium
+Runs the tests only on Desktop Chrome.
+npx playwright test example
+Runs the tests in a specific file.
+npx playwright test --debug
+Runs the tests in debug mode.
+npx playwright codegen
+Auto generate tests with Codegen.
+We suggest that you begin by typing:
+npx playwright test
+Update Playwright and download new browser binaries and their dependencies:
+npm install -D @playwright/test@latest
+npx playwright install --with-deps
+To specify which browser you would like to run your tests on, use the --project flag followed by the browser name.
+npx playwright test --project webkit
+To specify multiple browsers to run your tests on, use the --project flag multiple times followed by each browser name.
+npx playwright test --project webkit --project firefox
+To run only the tests that failed in the last test run, first run your tests and then run them again with the --last-failed flag.
+npx playwright test --last-failed
+
+
+
+
+
+http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Login.aspx?ReturnUrl=%2fsamples%2fTestComplete11%2fWebOrders%2fDefault.aspx
+
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+https://www.geeksforgeeks.org/typescript/typescript-tutorial/
+
+https://www.geeksforgeeks.org/java/object-oriented-programming-oops-concept-in-java/
+
+
+
+		Playwright with TS
+
+					7th Oct- 2025
+
+1. JDK
+2. IDE- Eclipse/Intelij
+3. Selenium WebDriver - 
+4. TestNG
+5. WebDriverManager - Browser Driver
+6. Apache POI
+7. ExtentReport
+-------------------------------------------------
+		Testing Approach
+
+Manual 		Automation		AI/Generative AI		
+
+-------------------------------------------------------------------------
+				SDET(All Rounder)
+
+UI		API		Mobile app	Performance 	BDD		CI/CD
+Playwright 	postman		Appium(open)	Jmeter		Cucumber	SCM(git/GitHub)
+Selenium	RestAssured(Java)		K6				Azure DevOps
+Cypress-2018	Playwright 			Gatling				Jenkins
+
+-----------------------------------------------------------------------------------------------
+Playwright - Level of Testing
+
+1. Unit
+2. Integration - API
+3. System
+4. UAT- BDD (Cucumber)
+
+Automation Guidelines :100%
+-----------------------------------------
+1. Application knowledge :
+2. Test case availability :-  50%
+
+3. Tools - Playwright + TS: 50%
+		
+		90%-95% - Playwright
+		5% TypeScript - 
+
+4. Programming Concept :-- OOPS
+
+----------------------------------------
+Package
+Class - Java
+Object
+Methods/function
+
+inheritance : 
+
+En capsulation:--
+
+
+WebDriver driver = new ChromeDriver()
+
+if else
+
+elseif
+
+for loop
+
+global and local variable
+
+switch case 
+
+operator
+
++
+-
+
+Data Types :
+
+-------------------------------------------
+Automation for any application.
+
+1. 20-25 object/controls :- 
+
+2. CRUD operation
+	UI		API		Database
+C	Create
+R	Read
+U	Update
+D	Delete
+
+-------------------------------------------------------------------
+Playwright Limitation:
+
+1. Mobile native app: 
+2. Thick Client - Desktop 
+
+
+TakesScreenshot 
+
+driver.findElement(By.id("")).SendKeys()
+
+---------------------------------------------------------------
+
+Playwright Setup : JS/TS
+
+1. nodejs :- javascript/typescript - Done
+2. IDE - Visual Studio Code
+3. Playwright
+
+
+
+
+
+
+
+
+
+
+DAy 2
+Day 2
+1.Is TypeScript Statically Typed?
+
+TypeScript is optionally statically typed, meaning it allows developers to specify types for variables, functions, and objects, enabling type checking at compile time. This feature helps catch type-related errors early in the development process, improving code reliability and maintainability.
+
+In a statically typed language, type checking occurs during compilation, and variables must adhere to their declared types. For example, in TypeScript:
+
+let value: number = 5;
+value = "Hello"; // Error: Type 'string' is not assignable to type 'number'
+Copy
+Here, the compiler enforces that value remains a number, preventing runtime errors caused by type mismatches.
+
+
+
+2.Benefits of Static Typing in TypeScript
+
+Early Error Detection: Type mismatches are caught during compilation, reducing runtime errors.
+
+Improved IDE Support: Features like code completion, refactoring, and type hints are enhanced.
+
+Code Predictability: Static typing ensures consistent use of variables and functions, making the codebase easier to understand and maintain
+
+3.How do you explicitly declare a variable with a type in TypeScript?
+
+let name: string = "Alice"
+
+4.Can typescript be run directly on browser??
+
+Browsers do not understand TypeScript, so it must be compiled to JavaScript using the TypeScript Compiler (tsc)
+
+5. To change bgm color n font color??
+
+CTRL+SHIFT+P -Color theme 
+
+6.npx playwright codegen demo.playwright.dev/todomvc
+
+7.Placeholder locator:--
+<input type="email" placeholder="name@example.com" />
+await page
+    .getByPlaceholder('name@example.com')
+    .fill('playwright@microsoft.com');
+
+8.Xpath
+Relative: Father/Son
+Absolute: Great grand/Grand/Father/Son
+
+R: //tagname[@attribute='']
+
+9.Why async and await is used only in TS/JS
+coz it works asynchronously if async and await is used to execute every line after line
+it'll wait for each line to get executed
+if not used all line will be executed at once/parallel
+EG: Login n Logout gets executed at once which doesn't make sense
+
+10.How to debug certain code
+add await page.pause()from whre u want the code to be debugged
+and in inspector > Click on "get over" to start line by line debugging
+
+
+Day3
+SDET note Day 3
+Diff between to have and to contain
+to have: to hv exact content
+to contain: to contain partial content
+
+Day 4
+textInput: used when there is input used fr the locator
+textContent : when no input is used while inspecthng
+
+Special Control:
+1.Mousehover
+2.Dragndrop
+3.Rightclick
+4.Doubleclick
+5.Pagination :1 2 3 4 5 6........ used in sites to view page 1 or 2 or 3 or more data 
+6.Datepicker (Calendar)
+7.Using Visual Test to test Ui/UX (looknfeel)
+8.Alerts WEbalert and windowalert(cannot be inspected and also kniwn as js alert)
+9.frame/iframe/frameset- arrangin elements
+
+
+normalise-space()=''
+
+Click
+click.("")
+locator().click
+
+Wait time for actions
+input 30sec
+expect 5sec
+
+findelement -> $
+findelements -> $$
+
+salaryCell?textContent()
+//? is used for soft crash instead of harsh
+
+Pagination - no of pages on website 1 2 3 4 5 ..........
+
+https://testautomationpractice.blogspot.com/

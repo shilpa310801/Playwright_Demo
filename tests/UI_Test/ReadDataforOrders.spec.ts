@@ -292,12 +292,12 @@ import { test, expect } from '@playwright/test';
 import { parse } from 'csv-parse/sync';
 
 // Read and parse the CSV file
-const records = parse(readFileSync('./tests/Test_Data/createOrderAllScenarios.csv'), {
+const records = parse(readFileSync('./tests/TestData/createOrderAllScenarios.csv'), {
   columns: true,
   skip_empty_lines: true,
 }) as Record<string, string>[];
 
-test.describe('WebOrder All Test Scenario', () => {
+test.describe('WebOrder All Test Scenario @smoke', () => {
   for (const record of records) {
     test(`WebOrder App - ${record['test_case']}`, async ({ page }) => {
       await page.goto('http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Login.aspx');

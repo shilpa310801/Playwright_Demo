@@ -5,7 +5,7 @@ import { readFileSync } from 'fs';
 let objects = readFileSync('./tests/TestData/createOrderAllScenarios.json')
 const orders = JSON.parse(objects.toString());
 
-test.describe('E2E WebOrder Application', () => {
+test.describe('E2E WebOrder Application @smoke', () => {
     let page: Page;
     // let ExpUserName;
 

@@ -1,7 +1,7 @@
 import { test, Page } from '@playwright/test';
 import { Login_LogoutPage } from './BaseTests';
 
-test.describe('WebOrder E2E Test tests @sanity', () => {
+test.describe('WebOrder E2E Test tests @sanity @smoke', () => {
   let loginPage: Login_LogoutPage;
   let page: Page;
   test.beforeAll(async ({ browser }) => {

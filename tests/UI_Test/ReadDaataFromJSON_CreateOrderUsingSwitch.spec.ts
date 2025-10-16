@@ -2,7 +2,7 @@ import fs from "fs";
 import { test, expect } from "@playwright/test";
 
 // Reads the JSON file and saves it
-const objects = fs.readFileSync("./tests/TestData/create_order_All_Scenario_Switch.json", "utf-8");
+const objects = fs.readFileSync("./tests/TestData/createOrderAllScenarios switch.json", "utf-8");
 const orders = JSON.parse(objects);
 
 test("Create Order - All Scenario", async ({ page }) => {
